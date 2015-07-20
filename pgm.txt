@@ -1,0 +1,54 @@
+
+public interface tree
+{
+	void root();
+	void leaves();
+}
+
+public interface animals
+{
+	viod herbivorous();
+	void cernivorous();
+}
+
+public interface birds 
+{
+	void flying();
+	void non_flying();
+}
+
+class forest implements tree,animals,birds
+{
+public void root(){
+	System.out.println("every tree have long roots");
+}
+
+public void leaves(){
+	System.out.println("tree have N no. of leaves");
+}
+public void herbivorous(){
+	System.out.println("cows are herbivorous animals");
+}
+public void cernivorous(){
+	System.out.println("tiger is a cernivorous animal");
+}
+public void flying(){
+	System.out.println("eagle is a flying bird");
+}
+public void non_flying(){
+	System.out.println("penguin is a non-flying bird");
+}
+}
+class Forest3 
+{
+public sattic void main(String args[])
+	{
+		Forest3 f1 = new Forest3;
+	f1.root();
+	f1.leaves();
+	f1.herbivorous();
+	f1.cernivorous();
+	f1.flying();
+	f1.non_flying();
+	}
+}
